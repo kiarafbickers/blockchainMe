@@ -1,5 +1,4 @@
 # basic-pgp-interface
-===================
 
 ## Fork notice
 This project was forked from cryptoreddit/basic-pgp-interface
@@ -12,6 +11,6 @@ Main changes are
 
 A very basic HTML/JS interface for PGP key generation and signing
 
-## This includes sources from:
+## This project includes sources from:
     - JQuery (http://jquery.com)
     - OpenPGPJS (https://github.com/openpgpjs/openpgpjs)
