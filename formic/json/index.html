@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+  
+  <head>
+    <meta charset='utf-8'>
+  </head>
+  
+    <body>
+    <section>
+      <h2>Blockchain ID Information</h2>
+      <form id='x'>
+      <input name="name" value="name or pseudonym"><br>
+      <input name="email" value="something@somewhere.com"><br>
+      <input name="date" value="date"><br> 
+      <input name="extra" value="line 3"><br>
+      <input name="extra" value="line 4"><br>
+      <input name="block #" value="block #"><br>
+      <input name="fingerprint" value="fingerprint"><br>
+      </form>
+      <button id='redump'>submit</button>
+      <pre id='log'></pre>
+    </section>
+    <script src='../formic.js'></script>
+    <script src='json.js'></script>
+    <script>
+      function dumpJSON () {
+          applicationJSON(document.getElementById("x"), function (j) {
+              document.getElementById("log").textContent = JSON.stringify(j, null, 4);
+          });
+      }
+      dumpJSON();
+      document.getElementById("redump").onclick = dumpJSON;
+    </script>
+  </body>
+    
+</html>
