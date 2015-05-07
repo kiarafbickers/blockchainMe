@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <style>
+      body {
+        font-size:14pt;
+      }
+        textarea {
+        width:800px;
+        height:100px;
+        font-family: Courier, fixed;
+        font-size:14pt;
+      }
+    </style>
+    <title>Generate Keys and Sign Message</title>
+  </head>
+
+  <body>
+  
+    <h1>GENERATE KEYS</h1>
+    This may take a while. Be prepared to wait a minute or more.
+    <input type="button" value="generate" onclick="generateKeyPair();"/>
+    <h2>Public:</h2><textarea id="generatedPublic"></textarea>
+    <h2>Private:</h2><textarea id="generatedPrivate"></textarea>
+        
+    <h1>SIGN</h1>
+    <h2>Document:</h2><textarea name="signDocument" id="signDocument"></textarea>
+    <h2>Sign using private key:</h2><textarea id="privkey"></textarea>
+    
+    <br/>
+    
+    <input type="button" value="sign" onclick="generateSignedMessage();"/>
+    <h2>Result:</h2><textarea id="signedMessage"></textarea>
+  
+  </body>
+  <footer>
+    <script src="./jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./openpgp.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./main.js" type="text/javascript" charset="utf-8"></script>
+  </footer>
+</html>
