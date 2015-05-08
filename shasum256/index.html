@@ -1,0 +1,18 @@
+<html> 
+    
+  <head>
+    <title>SHA256-JavaScript</title>
+    <script type="text/javascript" src="sha256.js"></script>
+  </head>
+    
+<body>
+    <h1>SHA256 - MessageDigest</h1>
+        <form>
+            <h2>Your input data:</h2>
+            <textarea name="fileToHash"></textarea><br>
+            <input type="button" value="calculate SHA256 hash"  onclick="javascript:this.form.yourhash.value=sha256_digest(this.form.fileToHash.value)" /><br><br>
+            <h2>SHA256 value:<h2>
+                <input type="text" name="yourhash" size="71" />
+        </form>
+</body>
+</html>

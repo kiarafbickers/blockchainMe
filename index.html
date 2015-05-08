@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>blockchainMe</title
+    <meta charset='utf-8'>
+    <script src="./js/formic.js"></script>
+    <script src="./js/json.js"></script>
+  </head>
+
+  <body>
+    <h1>Step One: Get a Pair of Keys</h1>
+    This may take a while. Be prepared to wait a minute or more.
+        <input type="button" value="generate" onclick="generateKeyPair();"/>
+    <h2>Public:</h2>
+        <textarea id="generatedPublic"></textarea>
+    <h2>Private:</h2>
+        <textarea id="generatedPrivate"></textarea>
+        
+    <br><br><br><br> 
+    <h1>Step Two: Fill Out Your ID<h1>  
+    <section>
+        <form id='x'>
+            <input name="name" value="name or pseudonym"><br>
+            <input name="email" value="something@somewhere.com"><br>
+            <input name="date" value="date"><br> 
+            <input name="extra" value="line 3"><br>
+            <input name="extra" value="line 4"><br>
+            <input name="block #" value="block #"><br>
+            <input name="fingerprint" value="fingerprint"><br>
+        </form><button id='redump'>submit</button><pre id='log'></pre>
+    </section>
+
+    <script>
+      function dumpJSON () {
+          applicationJSON(document.getElementById("x"), function (j) {
+              document.getElementById("log").textContent = JSON.stringify(j, null, 4);
+          });
+      }
+      dumpJSON();
+      document.getElementById("redump").onclick = dumpJSON;
+    </script>
+        
+    <br>
+    <h1>Step Three: Sign your ID</h1>
+    You can copy the text above and sign with a PGP application your comforable with, or you can paste your ID information with your private key and sign here. This step is cruial for verifying authenticity. 
+    <h2>Document:</h2>
+        <textarea name="signDocument" id="signDocument"></textarea>
+    <h2>Private key:</h2>
+        <textarea id="privkey"></textarea><br/>
+    <input type="button" value="sign" onclick="generateSignedMessage();"/>
+    <h2>Result:</h2>
+        <textarea id="signedMessage"></textarea>
+  
+    <br><br><br><br> 
+    <h1>Step Four: Cry Over SHA256 Message Digest<h1>
+        <form>
+            <h2>Your input data:</h2>
+            <textarea name="fileToHash"></textarea><br>
+            <input type="button" value="calculate SHA256 hash"  onclick="javascript:this.form.yourhash.value=sha256_digest(this.form.fileToHash.value)" /><br><br>
+            <h2>SHA256 value:<h2>
+                <input type="text" name="yourhash" size="70" />
+        </form>
+        
+        
+  </body>
+  <footer>
+    <script src="./js/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+    <script src="./js/openpgp.min.js" type="text/javascript"></script>
+    <script src="./js/sha256.js" type="text/javascript"></script>
+  </footer>
+</html>
