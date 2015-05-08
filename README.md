@@ -28,5 +28,5 @@ Security is a multi-faceted concern to individuals, requiring solutions that can
   - Head over to blockchainme.com
 
 ### Credits
-blockchainMe currently uses code from many open source projects: basic-pgp-interface(https://github.com/cryptoreddit/basic-pgp-interface), formic(https://github.com/darobin/formic), and jrruethe.github.io(jrruethe.github.io)
+blockchainMe currently uses code from many open source projects: [basic-pgp-interface](https://github.com/cryptoreddit/basic-pgp-interface), [formic](https://github.com/darobin/formic), and [jrruethe.github.io](jrruethe.github.io)
 
