@@ -26,5 +26,5 @@ The decentrlized structure of the blockchain ensures that no one enity has contr
 Strengthening your social network. Exchange IOU’s/loans with any member based on degrees of trust, and encourage collaboration.
 
 ### Credits
-blockchainMe currently uses code from many open source projects: [basic-pgp-interface](https://github.com/cryptoreddit/basic-pgp-interface), [formic](https://github.com/darobin/formic), and [jrruethe.github.io](jrruethe.github.io)
+blockchainMe currently uses code from many open source projects: [basic-pgp-interface](https://github.com/cryptoreddit/basic-pgp-interface), [formic](https://github.com/darobin/formic), and [jrruethe.github.io](http://jrruethe.github.io)
 
