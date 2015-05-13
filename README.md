@@ -3,6 +3,8 @@
 
 ---
 
+![Alt text](/img/Screen Shot 2015-05-12 at 5.33.42 PM.png)
+
 1. Enhanced individual **privacy** <br>
 **verifiable** on the blockchain
 2. Flexible **identity solutions** for <br>
