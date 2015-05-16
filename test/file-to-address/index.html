@@ -15,16 +15,17 @@
 <h1>BLOCKCHAIN ID TO BITCOIN ADDRESS</h1>
     <form>
         <h2>Document to upload to the blockchain:</h2>
+    
+    <!-- nothing required from main.js -->
         
         <textarea name="fileToHash"></textarea><br>
-        <input type="button" value="calculate SHA256 hash"  onclick="javascript:this.form.yourhash.value=sha256_digest(this.form.fileToHash.value)" />
+        <input type="button" value="calculate SHA256 hash"  onClick="javascript:this.form.yourhash.value=sha256_digest(this.form.fileToHash.value)" />
         
         <br>
         <h2>SHA256 value:<h2>
         <input type="text" name="yourhash" size="71" />
-    </form>
-    
-    
+    </form> 
+            
 </body>
 <footer>
 </footer>
