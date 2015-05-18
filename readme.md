@@ -37,7 +37,7 @@ BlockchainMe currently uses code from the open source projects listed below:
 - Ruether, J. (2015, February 28). Blockchain Identity. Retrieved from
 [https://jrruethe.github.io/blog/2015/02/28/blockchain-identity/](https://jrruethe.github.io/blog/2015/02/28/blockchain-identity)
 
-### Unicense
+### Unlicense
 BlockchainMe is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
