@@ -54,13 +54,13 @@
         <textarea id="signedMessage"></textarea>
 
     <br><br><br><br>
-    <h1>Step Four: Cry Over SHA256 Message Digest<h1>
+    <h1>Step Four: File-to-Bitcoin Address<h1>
         <form>
-            <h2>Your input data:</h2>
-            <textarea name="fileToHash"></textarea><br>
-            <input type="button" value="calculate SHA256 hash"  onclick="javascript:this.form.yourhash.value=generateBitconAddress(this.form.fileToHash.value)" /><br><br>
-            <h2>SHA256 value:<h2>
-                <input type="text" name="yourhash" size="70" />
+            <h2>Your input file:</h2>
+            <textarea name="fileToAddress"></textarea><br>
+            <input type="button" value="calculate bitcoin address"  onclick="javascript:this.form.address.value=generateBitconAddress(this.form.fileToAddress.value)" /><br><br>
+            <h2>Bitcoin Address:<h2>
+                <input type="text" name="address" size="70" />
         </form>
 
 

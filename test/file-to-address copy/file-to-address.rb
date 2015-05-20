@@ -3,7 +3,7 @@
 require 'digest'
 
 # Get the filename
-filename = ARGV[0]
+filename = "a"
 
 # Hash the file
 hash = Digest::SHA256.hexdigest File.read filename

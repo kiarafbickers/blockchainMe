@@ -3,12 +3,11 @@ function generateBitconAddress(value) {
         var hash = CryptoJS.SHA256(value).toString();
         hash = hash.substring(0, 40);
         hash = "00" + hash;
-        console.log(hex2a(hash))
-        hash = CryptoJS.SHA256(hex2a(hash)).toString();
-        console.log(hex2a(hash))
-        hash = CryptoJS.SHA256(hex2a(hash)).toString();
-        var checksum = hash.substring(0, 8);
-        console.log(base58.encode(bigInt(hash + checksum, 16)))
+        var checksum = CryptoJS.SHA256(hex2a(hash)).toString();
+        checksum = CryptoJS.SHA256(hex2a(checksum)).toString();
+        checksum = hash.substring(0, 8);
+        var address = (base58.encode(bigInt(hash + checksum, 16)));
+        console.log(address);
     } else {
         window.alert(BROWSER_UNSUPPORTED_MESSAGE);
     }
@@ -18,8 +17,8 @@ function getFileFromHtml() {
     return $('#fileToAddress').val();
 }
 
-function updateHtmlWithHash(hash) {
-    $('#hash').val(hash);
+function updateHtmlWithAddress(address) {
+    $('#address').val(address);
 }
 
 function handleError(error) {
@@ -32,7 +31,6 @@ var base58 = (function(alpha) {
     return {
         encode: function(enc) {
             var encoded = '';
-            console.log(enc)
             while (!enc.isZero()) {
                 divmod = enc.divmod(base);
                 var remainder = divmod["remainder"].toJSNumber()
