@@ -1,0 +1,17 @@
+<style>
+  .thumb {
+    height: 75px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+  }
+</style>
+
+<label for="data">Select File</label><input type="file" id="data">
+<p>sha256 hash:</p>
+<p id="pgp"></p>
+  
+
+<script src="./lib/CryptoJS/ripemd160.js"></script>
+<script src="./lib/CryptoJS/sha256.js"></script>	
+<script src="./lib/Bitcoin.js"></script>	
+<script src="./filehasherWithBitcoin.js"></script>
