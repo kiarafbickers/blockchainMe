@@ -4,7 +4,7 @@ Viewable at [blockchainMe.com](http://www.blockchainMe.com)
 
 ---
 
-![Alt text](/img/Screen Shot 2015-05-12 at 5.33.42 PM.png)
+![Alt text](http://blockchainme.com/img/iMac-Flat-Mockup1.gif)
 
 1. Enhanced individual **privacy** **verifiable** on the blockchain
 2. Flexible **identity solutions** for pseudonymity and self asserted identities
