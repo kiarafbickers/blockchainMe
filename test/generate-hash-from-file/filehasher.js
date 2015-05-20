@@ -9,10 +9,19 @@
       // Closure to capture the file information.
       reader.onload = function() {
           // this gets read of the mime-type data header
-          var actual_contents = reader.result.slice(reader.result.indexOf(',') + 1);
-          var what_i_need = new jsSHA(actual_contents, "B64").getHash("SHA-256", "HEX");
+
+          var actualContents = reader.result.slice(reader.result.indexOf(',') + 1);
+          var hashFromFile = new jsSHA(actualContents, "B64").getHash("SHA-256", "HEX");
+
+
+          var binaryOfHash = bitcoin.BigInteger.fromBuffer(hashFromFile);
+
+          var keyPair = new bitcoin.bitcoin.ECKey(binaryOfHash);
+          var publicAddress = keyPair.pub.getAddress().toString();
+          
           var element = document.getElementById("pgp");
-          element.innerHTML = what_i_need;
+          
+          element.innerHTML = publicAddress;
 
       }
 
