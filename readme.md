@@ -3,6 +3,7 @@
 Viewable at [blockchainMe.com](http://www.blockchainMe.com)
 
 Due to lack of time, and resources, the blockchainMe project is currently not under active development. Although a new implementation of idenity on the blockchain is in the works.
+
 ---
 
 ![Alt text](http://blockchainme.com/img/iMac-Flat-Mockup1.gif)
