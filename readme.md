@@ -24,7 +24,7 @@ BlockchainMe offers counterfeit-resistant and tamper-proof identification creden
 ### Decentralized
 The decentralized structure of the blockchain ensures that no one entity has control of the data or the power to enforce arbitrary limits on it.  Decentralization gives back the users the control of their data.
 
-### Web of Trust
+### Web-Of-Trust
 Strengthening your social network. Exchange IOU’s/loans with any member based on degrees of trust, and encourage collaboration.
 
 ### Credits
